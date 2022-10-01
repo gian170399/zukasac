@@ -113,14 +113,21 @@
                             class="nav-link dropdown-toggle"
                             id="navbarDropdown"
                             data-toggle="dropdown">
-                                Productos
+                                Categoria
                             </a>
                             <div class="dropdown-menu"
                             aria-labelledby="navbarDropdown">
-                                <a href="productos/sala.php" class="dropdown-item">Muebles para sala</a>
-                                <a href="productos/departamento.php" class="dropdown-item">Muebles para departamento</a>
-                                <a href="productos/mini_departamento.php" class="dropdown-item">Muebles para mini departamento</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Comedores</a>
+                                <a href="productos/sala.php" class="dropdown-item">Faros</a>
+                                <a href="productos/departamento.php" class="dropdown-item">Neblineros</a>
+                                <a href="productos/mini_departamento.php" class="dropdown-item">Focos</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Aros</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Equipos</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Parlantes</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Pisos</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Asientos</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Sirenas</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Accesorios</a>
+                                <a href="productos/comedores.php" class="dropdown-item">Accesorios</a>
                             </div>
                         </li>
                     </ul>
@@ -199,9 +206,12 @@
                 <div class="row py-4 " width="50px">
                     <?php foreach($fotos as $foto): ?>
                         <figure class="snip1249">
+                            <a href="archivos/single.php?id=<?php echo $foto['idProducto']; ?>">
                             <section class="image" id="imagenFav">
                                 <img src="fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
                             </section>
+                            </a>
+                            
                             <figcaption>
                                 <h3><?php echo $foto['titulo']?></h3>
                                 <p><?php echo $foto['breveDesc']?></p>

@@ -1,3 +1,6 @@
+<?php
+require '../archivos/redimensionar.class.php';
+
 if (isset($_FILES["in_subir"])){
     $nombre = $_FILES["in_subir"]["name"];
 
@@ -32,3 +35,4 @@ else {
     echo "Ocurrio un error al intentar subir la imagen.";
     exit();
 }
+?>

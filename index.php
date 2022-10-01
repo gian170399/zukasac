@@ -7,5 +7,7 @@
     }
     require 'archivos/paginacion.php';
     require 'archivos/contacto.php';
-    require 'views/index.view.php';
-?>
+   // require 'views/index.view.php';
+    require 'views/prueba.php';
+    // require 'archivos/redimensionar.php';
+?> 

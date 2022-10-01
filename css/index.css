@@ -23,8 +23,8 @@ figure.snip1249 * {
 }
 figure.snip1249 .image {
   position: relative;
-  height: 300px;
-  width: 300px;
+  /* height: 300px;
+  width: 300px; */
 }
 figure.snip1249 img {
   max-width: 100%;
