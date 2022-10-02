@@ -7,9 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <link rel="icon" type="image/jpg" href="img/logo.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="footer/footer.css">
+
     <!-- <link rel="stylesheet" href="css/indexNavbar.css"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
@@ -83,6 +87,7 @@
             clear: both;
             }
         }
+       
         </style>
     <title>ZUKA S.A.C.</title>
 </head>
@@ -92,7 +97,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
             <div class="container">
-                <a href="index.php" class="navbar-brand titulo"> ZUKA S.A.C.</a>
+                <a href="index.php" class="navbar-brand "> ZUKA S.A.C.</a>
 
                 <button class="navbar-toggler" 
                 type="button" data-toggle="collapse" 
@@ -117,17 +122,16 @@
                             </a>
                             <div class="dropdown-menu"
                             aria-labelledby="navbarDropdown">
-                                <a href="productos/sala.php" class="dropdown-item">Faros</a>
-                                <a href="productos/departamento.php" class="dropdown-item">Neblineros</a>
-                                <a href="productos/mini_departamento.php" class="dropdown-item">Focos</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Aros</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Equipos</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Parlantes</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Pisos</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Asientos</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Sirenas</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Accesorios</a>
-                                <a href="productos/comedores.php" class="dropdown-item">Accesorios</a>
+                                <a href="categorias/backend/faro.php" class="dropdown-item">Faros</a>
+                                <a href="categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
+                                <a href="categorias/backend/foco.php" class="dropdown-item">Focos</a>
+                                <a href="categorias/backend/aro.php" class="dropdown-item">Aros</a>
+                                <a href="categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
+                                <a href="categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
+                                <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
+                                <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
+                                <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
+                                <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a>
                             </div>
                         </li>
                     </ul>
@@ -140,7 +144,7 @@
                     
                     <a href="admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
                 </div>
-            </div>
+        </div>
     </nav>
  
     
@@ -365,72 +369,14 @@
             </div>
     </div>
         
+    <?php include 'footer/footer.view.php'?>
       
       
       
       
       
       
-      
-    <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4" style="background: url('mg/fondo_horario.png')">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Síguenos en nuestras redes sociales</h5>
-        <a href="https://www.facebook.com/Muebleria-G-M-2006071546273734"><img src="../img/fei.png"></a>
-        <a href="https://api.whatsapp.com/send?phone=51985368257&amp;"><img src="../img/wasac.png"></a>
-        <a href="#"><img src="../img/youtube.png"></a>
-        <a href="#"><img src="../img/instagram.png"></a>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">En caso de...</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20ayudar?%20,tengo%20una%20consulta.">¿Tienes alguna consulta?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20decir%20cuánto%20cuesta%20llevar%20un%20mueble%20a%20mi%20domicilio?.">¿Deseas conocer el cobro para llevar algún producto a tu domicilio?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20tengo%20un%20reclamo%20de%20un%20producto.">¿Tienes algún reclamo?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20decir%20cuánto%20cuesta%20retapizar%20un%20mueble?%20.">¿Deseas saber cuánto cuesta retapizar tu mueble?</a>
-          </li>
-        </ul>
-
-      </div><!-- Grid column -->
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Muebleria G & M (E.I.R.L.) Todos los Derechos Reservados
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+    
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
