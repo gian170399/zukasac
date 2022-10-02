@@ -82,7 +82,7 @@
                 <div class="col-12 col-sm-6 col-lg-4 m-auto">
                     <form class="formulario" method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
                         
-                        <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+                        <input type="hidden" name="idProducto" value="<?php echo $post['idProducto']; ?>">
 
                        
                         <label for="foto">Seleciona tu foto:</label>
@@ -98,8 +98,8 @@
                         <label for="titulo">Titulo del artículo:</label>
                         <input type="text" name="titulo" id="titulo" class="form-control" value="<?php echo $post['titulo'] ?>">
 
-                        <label for="extracto">Extracto del artículo:</label>
-                        <textarea name="extracto" name="extracto" id="extracto" placeholder="Ingresa un extracto" class="form-control" ><?php echo $post['extracto']; ?></textarea>
+                        <label for="breveDesc">breveDesc del artículo:</label>
+                        <textarea name="breveDesc" name="breveDesc" id="breveDesc" placeholder="Ingresa una breveDesc" class="form-control" ><?php echo $post['breveDesc']; ?></textarea>
                         
                         <label for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control mb-2">

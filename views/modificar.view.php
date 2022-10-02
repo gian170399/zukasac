@@ -102,8 +102,8 @@
                                 <div class="card-body">
                                     <h3 class="card-title"><?php echo $foto['titulo']?></h3>
                                     <p class="card-text"><?php echo $foto['breveDesc']?></p>
-                                    <a href="../archivos/single.php?id=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info mb-1"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
-                                    <a href="editar.php?id=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-dark mb-1"><i class="fa fa-pencil fa-fw"></i> Editar</a>
+                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info mb-1"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
+                                    <a href="editar.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-dark mb-1"><i class="fa fa-pencil fa-fw"></i> Editar</a>
                                     <a onclick="return confirmar('¿Realmente deseas borrar?');" href="borrar.php?id=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i> Borrar</a>
                                     <!--<a class="btn btn-danger" href="#">-->
                                     <!--<i class="fa fa-trash-o fa-lg"></i> Delete</a>-->

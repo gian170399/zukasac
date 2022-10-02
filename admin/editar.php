@@ -19,12 +19,12 @@
     // Limpiamos los datos para evitar que el usuario inyecte codigo.
     // $articulo=$_POST['titulo'];
 	$titulo = limpiarDatos($_POST['titulo']);
-    $extracto = limpiarDatos($_POST['breveDesc']);
+    $breveDesc = limpiarDatos($_POST['breveDesc']);
     $categoria = $_POST['categoria'];
 	// Con la funcion nl2br podemos transformar los saltos de linea en etiquetas <br>
 	// $texto = nl2br($_POST['texto']);
 	$descripcion = limpiarDatos($_POST['descripcion']);
-	$id = limpiarDatos($_POST['idProducto']);
+	$idProducto = limpiarDatos($_POST['idProducto']);
 	$imagen_guardada = $_POST['imagen-guardada'];
     $imagen = $_FILES['imagen'];
     $precio=limpiarDatos($_POST['precio']);
@@ -44,7 +44,7 @@
         $imagen = $_FILES['imagen']['name'];
     }
 
-	$statement = $conexion->prepare('UPDATE producto SET titulo = :titulo, breveDesc = :breveDesc, categoria = :categoria, descripcion = :descripcion, imagen = :imagen, precio = :precio WHERE id = :id');
+	$statement = $conexion->prepare('UPDATE producto SET titulo = :titulo, breveDesc = :breveDesc, categoria = :categoria, descripcion = :descripcion, imagen = :imagen, precio = :precio WHERE idProducto = :idProducto');
 	$statement->execute(array(
 		':titulo' => $titulo,
         ':breveDesc' => $breveDesc,
