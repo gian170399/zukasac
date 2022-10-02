@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../../img/logo.ico">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="footer.css">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
+    <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <style>
         .contacto .row .enviar{
             border-radius: 50px;
@@ -57,13 +59,13 @@
     </style>
     <title>G & M-Muebles para sala</title>
 </head>
-
+   
     
 <body>
     <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
-<div class="container">
+    <div class="container">
     <a href="../../index.php" class="navbar-brand "> ZUKA S.A.C.</a>
 
     <button class="navbar-toggler" 
@@ -81,7 +83,7 @@
                 <a href="../../index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
             </li>
             <li class="nav-item dropdown">
-                <a href="#" 
+                <a href="../../#" 
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown">
@@ -89,16 +91,16 @@
                 </a>
                 <div class="dropdown-menu"
                 aria-labelledby="navbarDropdown">
-                    <a href="categorias/backend/faro.php" class="dropdown-item">Faros</a>
-                    <a href="categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
-                    <a href="categorias/backend/foco.php" class="dropdown-item">Focos</a>
-                    <a href="categorias/backend/aro.php" class="dropdown-item">Aros</a>
-                    <a href="categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
-                    <a href="categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
-                    <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
-                    <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
-                    <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
-                    <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a>
+                    <a href="faro.php" class="dropdown-item">Faros</a>
+                    <a href="neblinero.php" class="dropdown-item">Neblineros</a>
+                    <a href="foco.php" class="dropdown-item">Focos</a>
+                    <a href="aro.php" class="dropdown-item">Aros</a>
+                    <a href="equipo.php" class="dropdown-item">Equipos</a>
+                    <a href="parlante.php" class="dropdown-item">Parlantes</a>
+                    <a href="piso.php" class="dropdown-item">Pisos</a>
+                    <a href="asiento.php" class="dropdown-item">Asientos</a>
+                    <a href="sirena.php" class="dropdown-item">Sirenas</a>
+                    <a href="accesorio.php" class="dropdown-item">Accesorios</a>
                 </div>
             </li>
         </ul>
@@ -114,8 +116,6 @@
 </div>
 </nav>
     </header>
-
-    <section class="content">
     
     <div class="contenido" style="background: url('../../img/fondo_horario.png'), #fff;">
         <main class="container">
@@ -332,123 +332,8 @@
             logged_out_greeting="Hola! En qué podemos ayudarte?">
             </div>
     </div>
-
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     
-
-
+    <?php include '../../footer/footer.view.php'?>      
     <script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

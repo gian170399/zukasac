@@ -2,19 +2,16 @@
     require '../archivos/funciones.php';
     
     // $conexion = conexion('may08mud_muebleria','may08mud','GCruiz99GCruiz99');
-    $conexion = conexion('zuka','root','');
-    if(!$conexion){
-        die();
-    }
+    include '../conexion.php';
 
-    $id= isset($_GET['id']) ? (int)$_GET['id'] : false;
+    $idProducto= isset($_GET['idProducto']) ? (int)$_GET['idProducto'] : false;
 
-    if(!$id){
+    if(!$idProducto){
         header('Location: ../index.php');
     }
 
-    $statement = $conexion->prepare('SELECT * FROM Producto WHERE idProducto= :id');
-    $statement->execute(array(':id'=> $id));
+    $statement = $conexion->prepare('SELECT * FROM Producto WHERE idProducto= :idProducto');
+    $statement->execute(array(':idProducto'=> $idProducto));
 
     $foto = $statement->fetch();
 

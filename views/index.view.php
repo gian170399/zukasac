@@ -131,7 +131,8 @@
                                 <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
                                 <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
                                 <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
-                                <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a>
+                                <!-- <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a> -->
+                                <a href="404/404.php" class="dropdown-item">Accesorios</a>
                             </div>
                         </li>
                     </ul>
@@ -210,19 +211,18 @@
                 <div class="row py-4 " width="50px">
                     <?php foreach($fotos as $foto): ?>
                         <figure class="snip1249">
-                            <a href="archivos/single.php?id=<?php echo $foto['idProducto']; ?>">
+                            <a href="archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
                             <section class="image" id="imagenFav">
                                 <img src="fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
                             </section>
                             </a>
-                            
                             <figcaption>
                                 <h3><?php echo $foto['titulo']?></h3>
                                 <p><?php echo $foto['breveDesc']?></p>
                                 <div class="price">
                                 S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <a href="archivos/single.php?id=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                                <a href="archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
                             </figcaption>
                         </figure>
                         <?php endforeach; ?>
