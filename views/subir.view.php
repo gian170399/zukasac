@@ -15,50 +15,60 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar"  style="background-color: #0a2e36;">
-            <div class="container">
-                <a href="../index.php" class="navbar-brand titulo"> Mueblería G & M  (E.I.R.L.)</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
-                <button class="navbar-toggler" 
-                type="button" data-toggle="collapse" 
-                data-target="#navegacion" 
-                aria-expanded="false" 
-                aria-label="Alternar Menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+    <a href="index.php" class="navbar-brand "> ZUKA S.A.C.</a>
 
-                <div class="collapse navbar-collapse" 
-                id="navegacion">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="../index.php" class="nav-link">Inicio<i class="fa fa-refresh fa-spin fa-fw"></i></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="../index.php" 
-                            class="nav-link dropdown-toggle"
-                            id="navbarDropdown"
-                            data-toggle="dropdown">
-                                Productos
-                            </a>
-                            <div class="dropdown-menu"
-                            aria-labelledby="navbarDropdown">
-                                <a href="../productos/sala.php" class="dropdown-item">Muebles para sala</a>
-                                <a href="../productos/departamento.php" class="dropdown-item">Muebles para departamento</a>
-                                <a href="../productos/mini_departamento.php" class="dropdown-item">Muebles para mini departamento</a>
-                                <a href="../productos/comedores.php" class="dropdown-item">Comedores</a>
-                            </div>
-                        </li>
-                    </ul>
+    <button class="navbar-toggler" 
+    type="button" data-toggle="collapse" 
+    data-target="#navegacion" 
+    aria-expanded="false" 
+    aria-label="Alternar Menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    <form action="../buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
-                        <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
-                        <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
-                    </form>
-
-                    <a href="../admin/cerrar.php" class="btn btn-warning ml-lg-5 "><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesion</a>
+    <div class="collapse navbar-collapse" 
+    id="navegacion">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" 
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                data-toggle="dropdown">
+                    Categoria
+                </a>
+                <div class="dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                    <a href="categorias/backend/faro.php" class="dropdown-item">Faros</a>
+                    <a href="categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
+                    <a href="categorias/backend/foco.php" class="dropdown-item">Focos</a>
+                    <a href="categorias/backend/aro.php" class="dropdown-item">Aros</a>
+                    <a href="categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
+                    <a href="categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
+                    <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
+                    <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
+                    <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
+                    <!-- <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a> -->
+                    <a href="404/404.php" class="dropdown-item">Accesorios</a>
                 </div>
-            </div>
-        </nav>
+            </li>
+        </ul>
+
+        <form action="archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
+            <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
+            <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+        </form>
+        
+        
+        <a href="admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+    </div>
+</div>
+</nav>
+
     </header>
 
     <div class="subir" style="background: url('../img/fondo_horario.png'), #fff;">
@@ -93,10 +103,15 @@
                         
                         <label for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control mb-2" required>
-                            <option value="sala">Muebles para sala</option>
-                            <option value="departamento">Muebles para departamento</option>
-                            <option value="mini_departamento">Muebles para mini departamento</option>
-                            <option value="comedores">Comedores</option>
+                            <option value="Faro">Faros</option>
+                            <option value="Neblinero">Neblineros</option>
+                            <option value="Foco">Focos</option>
+                            <option value="Piso">Pisos</option>
+                            <option value="Sirena">Sirenas</option>
+                            <option value="Asiento">Asientos</option>
+                            <option value="Aro">Aros</option>
+                            <option value="Equipo">Equipos</option>
+                            <option value="Aceesorio">Aceesorios</option>
                         </select>
 
                         <label for="texto">Descripcion:</label>

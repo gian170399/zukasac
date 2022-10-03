@@ -4,20 +4,17 @@ require '../archivos/funciones.php';
 
 // Comprobamos si la session esta iniciada, sino, redirigimos.
 // $conexion = conexion('may08mud_muebleria','may08mud','GCruiz99GCruiz99');
-$conexion = conexion('may08mud_muebleria','root','');
-    if(!$conexion){
-        die();
-    }
+include '../conexion.php';
 
-$id = limpiarDatos($_GET['id']);
+$idProducto = limpiarDatos($_GET['idProducto']);
 
 // Comprobamos que exista un ID
-if (!$id) {
+if (!$idProducto) {
 	header('Location: modificar.php');
 }
 
-$statement = $conexion->prepare('DELETE FROM productos WHERE id = :id');
-$statement->execute(array('id' => $id));
+$statement = $conexion->prepare('DELETE FROM producto WHERE idProducto = :idProducto');
+$statement->execute(array('idProducto' => $idProducto));
 
 
 header('Location: modificar.php');

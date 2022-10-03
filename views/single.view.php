@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../img/logo.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <style>
     .titulo{
@@ -146,22 +148,7 @@
         </div>
     </div>
 
-    <div class="ubicanos" style="background: url('../img/fondo.png'), #fff;">
-        <div class=" py-4">                       
-            <h1 class="text-center">Ubícanos</h1>                       
-        </div>
-        <section class="embed-responsive embed-responsive-4by3 mapa mt-4 W-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0810796540877!2d-77.06424538579273!3d-11.968888191519184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce33fd23000b%3A0x97970f7d33c3a974!2sAv%20Gerardo%20Unger%205427%2C%20Los%20Olivos%2015311%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1588473026779!5m2!1ses!2sus" class="embed-responsive-item" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-    </div>
-    
-    <!-- Logo de whatsapp flotante-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20deseo%20comprar%20el%20<?php echo $foto['titulo']?>%20(<?php echo $foto['extracto']?>)" class="float" target="_blank">
-    <!--<i class="fa fa-whatsapp my-float"></i>-->
-    <i class="fa fa-whatsapp fa-2x my-float"></i>
-    <!--<img src="img/whatsapp1.png" class="my-float">-->
-    </a>
+   <br>
     
     
     
@@ -195,68 +182,10 @@
             </div>
     </div>
     
+    <?php include '../footer/footer.view.php'?>
     
+         
     
-    <footer class="page-footer font-small blue pt-4" style="background: url('../img/fondo.png')">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Síguenos en nuestras redes sociales</h5>
-        <a href="https://www.facebook.com/Muebleria-G-M-2006071546273734"><img src="../img/fei.png"></a>
-        <a href="https://api.whatsapp.com/send?phone=51985368257&amp;"><img src="../img/wasac.png"></a>
-        <a href="#"><img src="../img/youtube.png"></a>
-        <a href="#"><img src="../img/instagram.png"></a>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">En caso de...</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20ayudar?%20,tengo%20una%20consulta.">¿Tienes alguna consulta?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20decir%20cuánto%20cuesta%20llevar%20un%20mueble%20a%20mi%20domicilio?.">¿Deseas conocer el cobro para llevar algún producto a tu domicilio?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20tengo%20un%20reclamo%20de%20un%20producto.">¿Tienes algún reclamo?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20decir%20cuánto%20cuesta%20retapizar%20un%20mueble?%20.">¿Deseas saber cuánto cuesta retapizar tu mueble?</a>
-          </li>
-        </ul>
-
-      </div><!-- Grid column -->
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Muebleria G & M (E.I.R.L.) Todos los Derechos Reservados
-  </div>
-  <!-- Copyright -->
-
-</footer>
-
-
-
     
     <script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>

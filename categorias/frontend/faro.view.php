@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
@@ -63,56 +65,56 @@
     
 <body>
     <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
+    <<nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
-    <div class="container">
-    <a href="../../index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+<div class="container">
+<a href="../../index.php" class="navbar-brand " style="color: black"> ZUKA S.A.C.</a>
 
-    <button class="navbar-toggler" 
-    type="button" data-toggle="collapse" 
-    data-target="#navegacion" 
-    aria-expanded="false" 
-    aria-label="Alternar Menu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<button class="navbar-toggler" 
+type="button" data-toggle="collapse" 
+data-target="#navegacion" 
+aria-expanded="false" 
+aria-label="Alternar Menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
 
-    <div class="collapse navbar-collapse" 
-    id="navegacion">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="../../index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="../../#" 
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                data-toggle="dropdown">
-                    Categoria
-                </a>
-                <div class="dropdown-menu"
-                aria-labelledby="navbarDropdown">
-                    <a href="faro.php" class="dropdown-item">Faros</a>
-                    <a href="neblinero.php" class="dropdown-item">Neblineros</a>
-                    <a href="foco.php" class="dropdown-item">Focos</a>
-                    <a href="aro.php" class="dropdown-item">Aros</a>
-                    <a href="equipo.php" class="dropdown-item">Equipos</a>
-                    <a href="parlante.php" class="dropdown-item">Parlantes</a>
-                    <a href="piso.php" class="dropdown-item">Pisos</a>
-                    <a href="asiento.php" class="dropdown-item">Asientos</a>
-                    <a href="sirena.php" class="dropdown-item">Sirenas</a>
-                    <a href="accesorio.php" class="dropdown-item">Accesorios</a>
-                </div>
-            </li>
-        </ul>
+<div class="collapse navbar-collapse" 
+id="navegacion">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="../../#" style="color: black"
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            data-toggle="dropdown">
+                Categoria
+            </a>
+            <div class="dropdown-menu"
+            aria-labelledby="navbarDropdown">
+                <a href="faro.php" class="dropdown-item">Faros</a>
+                <a href="neblinero.php" class="dropdown-item">Neblineros</a>
+                <a href="foco.php" class="dropdown-item">Focos</a>
+                <a href="aro.php" class="dropdown-item">Aros</a>
+                <a href="equipo.php" class="dropdown-item">Equipos</a>
+                <a href="parlante.php" class="dropdown-item">Parlantes</a>
+                <a href="piso.php" class="dropdown-item">Pisos</a>
+                <a href="asiento.php" class="dropdown-item">Asientos</a>
+                <a href="sirena.php" class="dropdown-item">Sirenas</a>
+                <a href="accesorio.php" class="dropdown-item">Accesorios</a>
+            </div>
+        </li>
+    </ul>
 
-        <form action="../../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
-            <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
-            <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
-        </form>
-        
-        
-        <a href="../../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
-    </div>
+    <form action="../../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
+        <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
+        <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+    </form>
+    
+    
+    <a href="../../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+</div>
 </div>
 </nav>
     </header>
@@ -135,15 +137,15 @@
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../../img/fondo_tienda1.jpg" 
+                                <img src="../../img/zuka3.jpg" 
                                 class="d-block w-100" alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../../img/fondotienda2.jpg"
+                                <img src="../../img/zuka2.jpg"
                                 class="d-block w-100"  alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../../img/fondo_tienda3.jpg" 
+                                <img src="../../img/zuka1.jpg" 
                                 class="d-block w-100"  alt=""> 
                             </div>
                         </div>
@@ -171,7 +173,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Muebles para sala</li>
+                            <li class="breadcrumb-item active" aria-current="page">Faros</li>
                         </ol>
                     </nav>
                         <h2 class="m-auto"><?php echo $titulo?></h2>
@@ -180,24 +182,29 @@
                 </div>
             </div>
 
-            <div class="row py-4 ">
-                <?php foreach($resultado_sala as $foto): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-4" >
-                        <div class="card carta" style="background: url('../img/fondo.png'), #fff;">
-                                <div class="inner">
-                                    <a href="../archivos/single.php?id=<?php echo $foto['id']; ?>">
-                                        <img height="170px" class="card-img-top w-100 img-fluid" src="../fotos/<?php echo $foto['imagen'] ?>" alt="Card image cap">
-                                    </a>
+            <!-- NUEVO CARD -->
+            <div class="row py-4 " width="50px">
+                    <?php foreach($resultado_sala as $foto): ?>
+                        <figure class="snip1249">
+                            <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
+                            <section class="image" id="imagenFav">
+                                <img src="../../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
+                            </section>
+                            </a>
+                            <figcaption>
+                                <h3><?php echo $foto['titulo']?></h3>
+                                <p><?php echo $foto['breveDesc']?></p>
+                                <div class="price">
+                                S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <div class="card-body">
-                                    <h3 class="card-title"><?php echo $foto['titulo']?></h3>
-                                    <p class="card-text"><?php echo $foto['breveDesc']?></p>
-                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info btn-block precio"><i class="fa fa-eye" aria-hidden="true"></i> Ver precio</a>
-                                </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                                <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                            </figcaption>
+                        </figure>
+                        <?php endforeach; ?>
+                
+                </div>
+                
+            <!-- NUEVO CARD -->
             
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto">
@@ -337,5 +344,7 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+
+    
 </body>
 </html>

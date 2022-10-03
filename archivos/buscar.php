@@ -1,16 +1,13 @@
 <?php
     require 'funciones.php';
     // $conexion = conexion('may08mud_muebleria','may08mud','GCruiz99GCruiz99');
-    $conexion = conexion('may08mud_muebleria','root','');
-    if(!$conexion){
-	    die();
-    }
+    include '../conexion.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET['busqueda'])){
     
         $busqueda = limpiarDatos($_GET['busqueda']);
 
-        $statement = $conexion->prepare("SELECT * FROM productos WHERE titulo LIKE :busqueda or extracto Like :busqueda");
+        $statement = $conexion->prepare("SELECT * FROM producto WHERE titulo LIKE :busqueda or breveDesc Like :busqueda");
         $statement->execute(array(':busqueda' => "%$busqueda%"));
         $resultados = $statement->fetchAll();
     
@@ -32,7 +29,7 @@
     # Si la pagina es mayor a 1 entonces hacemos un calculo para saber desde que post cargaremos.
     $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0 ;
     // Preparamos la consulta SQL
-    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM productos WHERE titulo LIKE :busqueda or extracto LIKE :busqueda ORDER BY id DESC LIMIT $inicio, $postPorPagina");
+    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM producto WHERE titulo LIKE :busqueda or breveDesc LIKE :busqueda ORDER BY idProducto DESC LIMIT $inicio, $postPorPagina");
 
     // Ejecutamos la consulta
     $statement->execute(array(':busqueda' => "%$busqueda%"));

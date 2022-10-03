@@ -103,10 +103,15 @@
                         
                         <label for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control mb-2">
-                            <option value="sala">Muebles para sala</option>
-                            <option value="departamento">Muebles para departamento</option>
-                            <option value="mini_departamento">Muebles para mini departamento</option>
-                            <option value="comedores">Comedores</option>
+                            <option value="Faro">Faros</option>
+                            <option value="Neblinero">Neblineros</option>
+                            <option value="Foco">Focos</option>
+                            <option value="Piso">Pisos</option>
+                            <option value="Sirena">Sirenas</option>
+                            <option value="Asiento">Asientos</option>
+                            <option value="Aro">Aros</option>
+                            <option value="Equipo">Equipos</option>
+                            <option value="Aceesorio">Aceesorios</option>
                         </select>
                             
                         <label for="texto">Descripcion:</label>

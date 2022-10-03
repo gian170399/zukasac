@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../css/index.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
@@ -66,7 +68,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
     <div class="container">
-    <a href="../../index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+    <a href="../../index.php" class="navbar-brand " style="color: black"> ZUKA S.A.C.</a>
 
     <button class="navbar-toggler" 
     type="button" data-toggle="collapse" 
@@ -80,10 +82,10 @@
     id="navegacion">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="../../index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
             </li>
             <li class="nav-item dropdown">
-                <a href="../../#" 
+                <a href="../../#" style="color: black"
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown">
@@ -171,7 +173,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Muebles para sala</li>
+                            <li class="breadcrumb-item active" aria-current="page">Neblineros</li>
                         </ol>
                     </nav>
                         <h2 class="m-auto"><?php echo $titulo?></h2>
@@ -180,24 +182,29 @@
                 </div>
             </div>
 
-            <div class="row py-4 ">
-                <?php foreach($resultado_sala as $foto): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-4" >
-                        <div class="card carta" style="background: url('../img/fondo.png'), #fff;">
-                                <div class="inner">
-                                    <a href="../archivos/single.php?id=<?php echo $foto['id']; ?>">
-                                        <img height="170px" class="card-img-top w-100 img-fluid" src="../fotos/<?php echo $foto['imagen'] ?>" alt="Card image cap">
-                                    </a>
+            <!-- NUEVO CARD -->
+            <div class="row py-4 " width="50px">
+                    <?php foreach($resultado_sala as $foto): ?>
+                        <figure class="snip1249">
+                            <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
+                            <section class="image" id="imagenFav">
+                                <img src="../../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
+                            </section>
+                            </a>
+                            <figcaption>
+                                <h3><?php echo $foto['titulo']?></h3>
+                                <p><?php echo $foto['breveDesc']?></p>
+                                <div class="price">
+                                S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <div class="card-body">
-                                    <h3 class="card-title"><?php echo $foto['titulo']?></h3>
-                                    <p class="card-text"><?php echo $foto['breveDesc']?></p>
-                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info btn-block precio"><i class="fa fa-eye" aria-hidden="true"></i> Ver precio</a>
-                                </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                                <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                            </figcaption>
+                        </figure>
+                        <?php endforeach; ?>
+                
+                </div>
+                
+            <!-- NUEVO CARD -->
             
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto">

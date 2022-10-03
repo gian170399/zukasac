@@ -97,7 +97,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
             <div class="container">
-                <a href="index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+                <a href="index.php" class="navbar-brand" style="color: black"> ZUKA S.A.C.</a>
 
                 <button class="navbar-toggler" 
                 type="button" data-toggle="collapse" 
@@ -111,10 +111,10 @@
                 id="navegacion">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                            <a href="index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" 
+                            <a href="#"  style="color: black"
                             class="nav-link dropdown-toggle"
                             id="navbarDropdown"
                             data-toggle="dropdown">
@@ -167,15 +167,15 @@
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/fondo_tienda1.jpg" 
+                                <img src="img/zuka3.jpg" 
                                 class="d-block w-100" alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="img/fondotienda2.jpg"
+                                <img src="img/zuka2.jpg"
                                 class="d-block w-100"  alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="img/fondo_tienda3.jpg" 
+                                <img src="img/zuka1.jpg" 
                                 class="d-block w-100"  alt=""> 
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                     <div class="col">
                         <div class="py-4 border-bottom">
                             <!-- <h1 class="text-center"><?php echo $titulo?></h1> -->
-                            <h1 class="text-center" style="font-family: 'Josefin Sans', sans-serif; color: red ;">Productos</h1>
+                            <h1 class="text-center" style="font-family: 'Josefin Sans', sans-serif; color: black ;">Productos</h1>
                         </div>
                     </div>
                 </div>
@@ -228,7 +228,6 @@
                         <?php endforeach; ?>
                 
                 </div>
-                
 <!-- NUEVO CARD -->
 
                 <div class="row">
@@ -265,6 +264,8 @@
 
         </main>
     </div>
+
+    <br>
 
     <!-- <div class="contacto" style="background-color: #E2E2EA;">
         <div class="container">
@@ -321,7 +322,7 @@
         </div>
     </div> -->
 
-    <div class="ubicanos" style="background: url('mg/fondo_horario.png'), #fff;">
+    <!-- <div class="ubicanos" style="background: url('mg/fondo_horario.png'), #fff;">
         <div class=" py-4 border-top">                       
             <h1 class="text-center">Ubícanos</h1>                       
         </div>
@@ -329,7 +330,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0810796540877!2d-77.06424538579273!3d-11.968888191519184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce33fd23000b%3A0x97970f7d33c3a974!2sAv%20Gerardo%20Unger%205427%2C%20Los%20Olivos%2015311%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1588473026779!5m2!1ses!2sus" class="embed-responsive-item" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </div>
-    
+     -->
     <!-- Logo de whatsapp flotante-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20ayudar?%20,tengo%20una%20consulta." class="float" target="_blank">

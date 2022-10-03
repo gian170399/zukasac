@@ -66,7 +66,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
     <div class="container">
-    <a href="../../index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+    <a href="../../index.php" class="navbar-brand " style="color: black"> ZUKA S.A.C.</a>
 
     <button class="navbar-toggler" 
     type="button" data-toggle="collapse" 
@@ -80,10 +80,10 @@
     id="navegacion">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="../../index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
             </li>
             <li class="nav-item dropdown">
-                <a href="../../#" 
+                <a href="../../#" style="color: black"
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown">
@@ -171,7 +171,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Muebles para sala</li>
+                            <li class="breadcrumb-item active" aria-current="page">Equipos</li>
                         </ol>
                     </nav>
                         <h2 class="m-auto"><?php echo $titulo?></h2>

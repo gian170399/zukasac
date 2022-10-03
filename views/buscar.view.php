@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../img/logo.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <style>
         .contacto .row .enviar{
@@ -165,25 +168,28 @@
                 </div>
             </div>
 
-            <div class="row py-4 ">
+            <!-- NUEVO CARD -->
+            <div class="row py-4 " width="50px">
+                    <?php foreach($resultados as $foto): ?>
+                        <figure class="snip1249">
+                            <a href="archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
+                            <section class="image" id="imagenFav">
+                                <img src="../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
+                            </section>
+                            </a>
+                            <figcaption>
+                                <h3><?php echo $foto['titulo']?></h3>
+                                <p><?php echo $foto['breveDesc']?></p>
+                                <div class="price">
+                                S/ <?php echo $foto['precio'];?>
+                                </div>
+                                <a href="archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                            </figcaption>
+                        </figure>
+                        <?php endforeach; ?>
                 
-                <?php foreach($resultados as $foto): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-4" >
-                        <div class="card" style="background: url('../img/fondo.png'), #fff;">
-                                <div class="inner">
-                                    <a href="single.php?id=<?php echo $foto['id']; ?>">
-                                        <img height="170px" class="card-img-top w-100 img-fluid" src="../fotos/<?php echo $foto['imagen'] ?>" alt="Card image cap">
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title"><?php echo $foto['titulo']?></h3>
-                                    <p class="card-text"><?php echo $foto['extracto']?></p>
-                                    <a href="single.php?id=<?php echo $foto['id'];?>" class="btn btn-sm btn-info btn-block precio"><i class="fa fa-eye" aria-hidden="true"></i> Ver precio</a>
-                                </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                </div>
+<!-- NUEVO CARD -->
             
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto">
@@ -321,65 +327,10 @@
             </div>
     </div>
     
+    <?php include '../footer/footer.view.php'?>
+
+
     
-
-    <footer class="page-footer font-small blue pt-4" style="background: url('../img/fondo_horario.png')">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Síguenos en nuestras redes sociales</h5>
-        <a href="https://www.facebook.com/Muebleria-G-M-2006071546273734"><img src="../img/fei.png"></a>
-        <a href="https://api.whatsapp.com/send?phone=51985368257&amp;"><img src="../img/wasac.png"></a>
-        <a href="#"><img src="../img/youtube.png"></a>
-        <a href="#"><img src="../img/instagram.png"></a>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">En caso de...</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola%20Sra.%20Rosalina,%20me%20podria%20ayudar?%20,tengo%20una%20consulta.">¿Tienes alguna consulta?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola%20Sra.%20Rosalina,%20me%20podria%20decir%20cuánto%20cuesta%20llevar%20un%20mueble%20a%20mi%20domicilio?.">¿Deseas conocer el cobro para llevar algún producto a tu domicilio?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola%20Sra.%20Rosalina,%20tengo%20un%20reclamo%20de%20un%20producto.">¿Tienes algún reclamo?</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola%20Sra.%20Rosalina,%20me%20podria%20decir%20cuánto%20cuesta%20retapizar%20un%20mueble?%20.">¿Deseas saber cuánto cuesta retapizar tu mueble?</a>
-          </li>
-        </ul>
-
-      </div><!-- Grid column -->
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Muebleria G & M (E.I.R.L.) Todos los Derechos Reservados
-  </div>
-  <!-- Copyright -->
-
-</footer>
     <script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

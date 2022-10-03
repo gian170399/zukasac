@@ -66,7 +66,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
     <div class="container">
-    <a href="../../index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+    <a href="../../index.php" class="navbar-brand " style="color: black"> ZUKA S.A.C.</a>
 
     <button class="navbar-toggler" 
     type="button" data-toggle="collapse" 
@@ -80,23 +80,29 @@
     id="navegacion">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="../../index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
             </li>
             <li class="nav-item dropdown">
-                            <a href="#" 
-                            class="nav-link dropdown-toggle"
-                            id="navbarDropdown"
-                            data-toggle="dropdown">
-                                Productos
-                            </a>
-                            <div class="dropdown-menu"
-                            aria-labelledby="navbarDropdown">
-                                <a href="sala.php" class="dropdown-item">Muebles para sala</a>
-                                <a href="departamento.php" class="dropdown-item">Muebles para departamento</a>
-                                <a href="mini_departamento.php" class="dropdown-item">Muebles para mini departamento</a>
-                                <a href="comedores.php" class="dropdown-item">Comedores</a>
-                            </div>
-                        </li>
+                <a href="../../#" style="color: black"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                data-toggle="dropdown">
+                    Categoria
+                </a>
+                <div class="dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                    <a href="faro.php" class="dropdown-item">Faros</a>
+                    <a href="neblinero.php" class="dropdown-item">Neblineros</a>
+                    <a href="foco.php" class="dropdown-item">Focos</a>
+                    <a href="aro.php" class="dropdown-item">Aros</a>
+                    <a href="equipo.php" class="dropdown-item">Equipos</a>
+                    <a href="parlante.php" class="dropdown-item">Parlantes</a>
+                    <a href="piso.php" class="dropdown-item">Pisos</a>
+                    <a href="asiento.php" class="dropdown-item">Asientos</a>
+                    <a href="sirena.php" class="dropdown-item">Sirenas</a>
+                    <a href="accesorio.php" class="dropdown-item">Accesorios</a>
+                </div>
+            </li>
         </ul>
 
         <form action="../../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
@@ -165,7 +171,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Muebles para sala</li>
+                            <li class="breadcrumb-item active" aria-current="page">Aros</li>
                         </ol>
                     </nav>
                         <h2 class="m-auto"><?php echo $titulo?></h2>
