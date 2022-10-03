@@ -4,12 +4,14 @@
 require '../archivos/funciones.php';
 comprobarSesion();
 // $conexion = conexion('may08mud_muebleria','may08mud','GCruiz99GCruiz99');
-$conexion = conexion('zuka','root','');
-if (!$conexion) {
-	// Terminamos con la ejecucion de la pagina si no pudimos conectar.
-	// Normalmente lo que hariamos es redirigir a una pagina de error.
-	die();
-}
+// $conexion = conexion('zuka','root','');
+// if (!$conexion) {
+// 	// Terminamos con la ejecucion de la pagina si no pudimos conectar.
+// 	// Normalmente lo que hariamos es redirigir a una pagina de error.
+// 	die();
+// }
+
+include '../conexion.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST' && !empty($_FILES)){
 	// print_r($_FILES);

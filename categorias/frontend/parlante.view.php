@@ -15,7 +15,7 @@
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <link rel="stylesheet" href="../../footer/footer.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- <link rel="stylesheet" href="../css/navbar.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
@@ -68,7 +68,7 @@
 
         
     </style>
-    <title>ZUKA S.A.C. - Faros</title>
+    <title>ZUKA S.A.C. - Parlante</title>
 </head>
    
     
@@ -94,7 +94,7 @@
                             <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#"  style="color: black"
+                            <a href="#../"  style="color: black"
                             class="nav-link dropdown-toggle"
                             id="navbarDropdown"
                             data-toggle="dropdown">
@@ -102,17 +102,17 @@
                             </a>
                             <div class="dropdown-menu"
                             aria-labelledby="navbarDropdown">
-                                <a href="../../categorias/backend/faro.php" class="dropdown-item">Faros</a>
-                                <a href="../../categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
-                                <a href="../../categorias/backend/foco.php" class="dropdown-item">Focos</a>
+                                <a href="faro.php" class="dropdown-item">Faros</a>
+                                <a href="neblinero.php" class="dropdown-item">Neblineros</a>
+                                <!-- <a href="../../categorias/backend/foco.php" class="dropdown-item">Focos</a>
                                 <a href="../../categorias/backend/aro.php" class="dropdown-item">Aros</a>
                                 <a href="../../categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
                                 <a href="../../categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
                                 <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
                                 <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
-                                <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
+                                <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a> -->
                                 <!-- <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a> -->
-                                <a href="404/404.php" class="dropdown-item">Accesorios</a>
+                                <!-- <a href="404/404.php" class="dropdown-item">Accesorios</a> -->
                             </div>
                         </li>
                     </ul>

@@ -4,13 +4,13 @@
     // $conexion = conexion('may08mud_muebleria','may08mud','GCruiz99GCruiz99');
     include '../../conexion.php';
 
-    $statement = $conexion->prepare("SELECT * FROM producto WHERE categoria = 'Asiento'");
+    $statement = $conexion->prepare("SELECT * FROM producto WHERE categoria = 'Parlante'");
     $statement->execute();
     $resultado_sala = $statement->fetchAll();
     if (empty($resultado_sala)) {
-        $titulo = 'No hay productos disponibles en "Productos para Asiento"'  ;
+        $titulo = 'No hay productos disponibles en "Productos para Parlante"'  ;
     } else {
-        $titulo = 'Asientos';
+        $titulo = 'Parlantes';
     }
 
     $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
@@ -22,7 +22,7 @@
     $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0 ;
 
     // Preparamos la consulta SQL
-    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM producto WHERE categoria = 'Asiento' ORDER BY idProducto DESC LIMIT $inicio, $postPorPagina");
+    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM producto WHERE categoria = 'Parlante' ORDER BY idProducto DESC LIMIT $inicio, $postPorPagina");
 
     // Ejecutamos la consulta
     $statement->execute();
@@ -30,9 +30,9 @@
 
     // Comprobamos que haya productos, sino entonces redirigimos.
     if (empty($resultado_sala)) {
-        $titulo = 'No hay productos disponibles en "Asiento"' ;
+        $titulo = 'No hay productos disponibles en "Parlante"' ;
     } else {
-        $titulo = 'Asientos';
+        $titulo = 'Parlantes';
     }
 
     // Calculamos el total de productos, para despues conocer el numero de paginas de la paginacion.
@@ -45,6 +45,6 @@
     $numeroPaginas = ceil($total_post / $postPorPagina);
 
     require '../../archivos/contacto.php';
-    require '../frontend/asiento.view.php';
+    require '../frontend/parlante.view.php';
     
 ?>

@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+
+
     <link rel="icon" type="image/jpg" href="../../img/logo.ico">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/8ed3a36f97.js"></script>
     <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
+        .titulo{
+            font-family: 'Bree Serif', serif;   
+        }
         .contacto .row .enviar{
             border-radius: 50px;
             padding:15px 20px;
@@ -17,9 +29,6 @@
         }
         .contacto .row .input{
             border-radius: 15px;
-        }
-        .titulo{
-            font-family: 'Bree Serif', serif;
         }
         .inner{
             overflow: hidden;
@@ -56,8 +65,10 @@
         .precio{
             font-size:17px;
         }
+
+        
     </style>
-    <title>G & M-Muebles para sala</title>
+    <title>ZUKA S.A.C. - Faros</title>
 </head>
    
     
@@ -65,96 +76,97 @@
     <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
-    <div class="container">
-    <a href="../../index.php" class="navbar-brand " style="color: black"> ZUKA S.A.C.</a>
+            <div class="container">
+                <a href="../../index.php" class="navbar-brand" style="color: black"> ZUKA S.A.C.</a>
 
-    <button class="navbar-toggler" 
-    type="button" data-toggle="collapse" 
-    data-target="#navegacion" 
-    aria-expanded="false" 
-    aria-label="Alternar Menu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+                <button class="navbar-toggler" 
+                type="button" data-toggle="collapse" 
+                data-target="#navegacion" 
+                aria-expanded="false" 
+                aria-label="Alternar Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <div class="collapse navbar-collapse" 
-    id="navegacion">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="../../#" style="color: black"
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                data-toggle="dropdown">
-                    Categoria
-                </a>
-                <div class="dropdown-menu"
-                aria-labelledby="navbarDropdown">
-                    <a href="faro.php" class="dropdown-item">Faros</a>
-                    <a href="neblinero.php" class="dropdown-item">Neblineros</a>
-                    <a href="foco.php" class="dropdown-item">Focos</a>
-                    <a href="aro.php" class="dropdown-item">Aros</a>
-                    <a href="equipo.php" class="dropdown-item">Equipos</a>
-                    <a href="parlante.php" class="dropdown-item">Parlantes</a>
-                    <a href="piso.php" class="dropdown-item">Pisos</a>
-                    <a href="asiento.php" class="dropdown-item">Asientos</a>
-                    <a href="sirena.php" class="dropdown-item">Sirenas</a>
-                    <a href="accesorio.php" class="dropdown-item">Accesorios</a>
+                <div class="collapse navbar-collapse" 
+                id="navegacion">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="../../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#"  style="color: black"
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdown"
+                            data-toggle="dropdown">
+                                Categoria
+                            </a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                                <a href="../../categorias/backend/faro.php" class="dropdown-item">Faros</a>
+                                <a href="../../categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
+                                <a href="../../categorias/backend/foco.php" class="dropdown-item">Focos</a>
+                                <a href="../../categorias/backend/aro.php" class="dropdown-item">Aros</a>
+                                <a href="../../categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
+                                <a href="../../categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
+                                <a href="categorias/backend/piso.php" class="dropdown-item">Pisos</a>
+                                <a href="categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
+                                <a href="categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
+                                <!-- <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a> -->
+                                <a href="404/404.php" class="dropdown-item">Accesorios</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form action="../../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
+                        <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
+                        <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+                    </form>
+                    
+                    
+                    <a href="../../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
                 </div>
-            </li>
-        </ul>
-
-        <form action="../../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
-            <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
-            <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
-        </form>
-        
-        
-        <a href="../../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
-    </div>
-</div>
-</nav>
-    </header>
+        </div>
+    </nav>
+ 
     
-    <div class="contenido" style="background: url('../../img/fondo_horario.png'), #fff;">
+    <div class="contenido" style="background: #fff;">
         <main class="container">
             <div class="row mt-5 pt-4">
                 <div class="col">
                     <div class="carousel slide"
-                    id="slideshow" data-ride="carousel">
+                    id="slideshowcat" data-ride="carousel">
                         <!-- Indicadores -->
                         <ol class="carousel-indicators">
-                            <li data-target="#slideshow"
+                            <li data-target="#slideshowcat"
                             data-slide-to="0" class="active"></li>
-                            <li data-target="#slideshow"
+                            <li data-target="#slideshowcat"
                             data-slide-to="1"></li>
-                            <li data-target="#slideshow"
+                            <li data-target="#slideshowcat"
                             data-slide-to="2"></li>
                         </ol>
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../../img/fondo_tienda1.jpg" 
+                                <img src="../../img/zuka3.jpg" 
                                 class="d-block w-100" alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../../img/fondotienda2.jpg"
+                                <img src="../img/transmisionysuspension.jpg"
                                 class="d-block w-100"  alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../../img/fondo_tienda3.jpg" 
+                                <img src="../../img/frenoyembrage.jpg" 
                                 class="d-block w-100"  alt=""> 
                             </div>
                         </div>
                         <!-- Controladores -->
-                        <a href="#slideshow" class="carousel-control-prev" 
+                        <a href="#slideshowprev" class="carousel-control-prev" 
                         data-slide="prev">
                             <span class="carousel-control-prev-icon"
                             aria-hidden="true"></span>
                             <span class="sr-only">Anterior</span>
                         </a>
-                        <a href="#slideshow" class="carousel-control-next" 
+                        <a href="#slideshownext" class="carousel-control-next" 
                         data-slide="next">
                             <span class="carousel-control-next-icon"
                             aria-hidden="true"></span>
@@ -171,7 +183,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Equipos</li>
+                            <li class="breadcrumb-item active" aria-current="page">Faros</li>
                         </ol>
                     </nav>
                         <h2 class="m-auto"><?php echo $titulo?></h2>
@@ -180,24 +192,29 @@
                 </div>
             </div>
 
-            <div class="row py-4 ">
-                <?php foreach($resultado_sala as $foto): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-4" >
-                        <div class="card carta" style="background: url('../img/fondo.png'), #fff;">
-                                <div class="inner">
-                                    <a href="../archivos/single.php?id=<?php echo $foto['id']; ?>">
-                                        <img height="170px" class="card-img-top w-100 img-fluid" src="../fotos/<?php echo $foto['imagen'] ?>" alt="Card image cap">
-                                    </a>
+            <!-- NUEVO CARD -->
+            <div class="row py-4 " width="50px">
+                    <?php foreach($resultado_sala as $foto): ?>
+                        <figure class="snip1249">
+                            <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
+                            <section class="image" id="imagenFav">
+                                <img src="../../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
+                            </section>
+                            </a>
+                            <figcaption>
+                                <h5><?php echo $foto['titulo']?></h5>
+                                <p><?php echo $foto['breveDesc']?></p>
+                                <div class="price">
+                                S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <div class="card-body">
-                                    <h3 class="card-title"><?php echo $foto['titulo']?></h3>
-                                    <p class="card-text"><?php echo $foto['breveDesc']?></p>
-                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info btn-block precio"><i class="fa fa-eye" aria-hidden="true"></i> Ver precio</a>
-                                </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                                <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                            </figcaption>
+                        </figure>
+                        <?php endforeach; ?>
+                
+                </div>
+                
+            <!-- NUEVO CARD -->
             
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto">
@@ -230,70 +247,11 @@
         </main>
     </div>
 
-    <div class="contacto" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="py-4 border-top">
-                        <h1 class="text-center">Contacto</h1>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4 m-auto">
-                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="mb-4">
-                        <input type="text" id="nombre" class="form-control mb-3 input" name="nombre"
-                        placeholder="Nombre" 
-                        value="<?php if(!$enviado && isset($nombre)) echo $nombre ?>">
-                    
-                        <input type="text" id="correo"class="form-control mb-3 input" name="correo"
-                        placeholder="Correo"
-                        value="<?php if(!$enviado && isset($correo)) echo $correo ?>">
-                    
-                        <textarea class="form-control mb-3 input" id="mensaje" name="mensaje" placeholder="Mensaje"><?php if(!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
-                    
-                        <?php if(!empty($errores)): ?>
-                                    <div class="alert error">
-                                        <?php echo $errores;?>
-                                    </div>
-                        <?php elseif($enviado): ?>
-                                    <div class="alert success">
-                                        <p>Enviado correctamente</p>
-                                    </div>
-                        <?php endif ?>
-                                
-                                
-                    
-                        <input type="submit" value="Enviar Mensaje" name="submit"
-                                class="enviar btn btn-primary mb-4">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
-    <div class="horarios" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-lg-12 mb-4">
-                <div class="py-4 border-top">
-                    <h1 class="text-center">Horarios</h1>
-                    <h5>Lunes a Sabado: 10am-4pm</h5>
-                 </div>
-            </div>
-        </div>
-        </div>
-    </div>
+    
 
-    <div class="ubicanos" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class=" py-4 border-top">                       
-            <h1 class="text-center">Ubícanos</h1>                       
-        </div>
-        <section class="embed-responsive embed-responsive-4by3 mapa mt-4 W-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0810796540877!2d-77.06424538579273!3d-11.968888191519184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce33fd23000b%3A0x97970f7d33c3a974!2sAv%20Gerardo%20Unger%205427%2C%20Los%20Olivos%2015311%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1588473026779!5m2!1ses!2sus" class="embed-responsive-item" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-    </div> 
+    
 
     <!-- Logo de whatsapp flotante-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -302,7 +260,7 @@
     </a>
     
     
-    
+    <br>
     
     <!-- Load Facebook SDK for JavaScript -->
     <div class="fei">
@@ -337,5 +295,7 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+
+    
 </body>
 </html>

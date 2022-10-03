@@ -2,7 +2,7 @@
     $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 
     // Establecemos cuantos post por pagina queremos cargar.
-    $postPorPagina = 8;
+    $postPorPagina = 9;
 
     // Revisamos desde que articulo vamos a cargar, dependiendo de la pagina en la que se encuentre el usuario.
     # Comprobamos si la pagina en la que esta es mayor a 1, sino entonces cargamos desde el articulo 0.

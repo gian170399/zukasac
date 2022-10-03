@@ -1,23 +1,10 @@
+<!--<!DOCTYPE html>-->
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="icon" type="image/jpg" href="img/logo.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="footer/footer.css">
-	<link rel="stylesheet" href="prueba.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
-    <title>ZUKA S.A.C.</title>
+  <link rel="stylesheet" href="scss/prueba.css">
 </head>
-   
 
-
-
+<body>
 <h1>Compra de comida online</h1>
 
 <!-- Tabla - Productos del Carrito -->
@@ -83,3 +70,4 @@
    </div>
   </article>
 </template>
+</body>

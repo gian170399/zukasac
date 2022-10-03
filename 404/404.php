@@ -153,7 +153,7 @@
 <div class="cont_principal">
     <div class="cont_error">
       
-    <h1>Oops, Error 404</h1>  
+    <h3>Oops, Error 404</h3>  
       <p>La pagina que estas buscando no se encuentra aqui.</p>
       </div>
     <div class="cont_aura_1"></div>

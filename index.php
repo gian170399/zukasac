@@ -5,6 +5,6 @@
     require 'archivos/paginacion.php';
     require 'archivos/contacto.php';
     require 'views/index.view.php';
-    //require 'views/prueba.php';
+   //require 'views/prueba.view.php';
     // require 'archivos/redimensionar.php';
 ?> 

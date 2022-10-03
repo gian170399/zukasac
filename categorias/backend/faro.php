@@ -8,7 +8,7 @@
     $statement->execute();
     $resultado_sala = $statement->fetchAll();
     if (empty($resultado_sala)) {
-        $titulo = 'No hay productos disponibles en "Muebles para Faro"'  ;
+        $titulo = 'No hay productos disponibles en "Productos para Faro"'  ;
     } else {
         $titulo = 'Faros';
     }

@@ -64,57 +64,64 @@
     
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar"  style="background-color: #0a2e36;">
-            <div class="container">
-                <a href="../index.php" class="navbar-brand titulo"> Mueblería G & M  (E.I.R.L.)</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
-                <button class="navbar-toggler" 
-                type="button" data-toggle="collapse" 
-                data-target="#navegacion" 
-                aria-expanded="false" 
-                aria-label="Alternar Menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+    <a href="../index.php" class="navbar-brand" style="color: black"> ZUKA S.A.C.</a>
 
-                <div class="collapse navbar-collapse" 
-                id="navegacion">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="../index.php" class="nav-link">Inicio<i class="fa fa-refresh fa-spin fa-fw"></i></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" 
-                            class="nav-link dropdown-toggle"
-                            id="navbarDropdown"
-                            data-toggle="dropdown">
-                                Productos
-                            </a>
-                            <div class="dropdown-menu"
-                            aria-labelledby="navbarDropdown">
-                                <a href="../productos/sala.php" class="dropdown-item">Muebles para sala</a>
-                                <a href="../productos/departamento.php" class="dropdown-item">Muebles para departamento</a>
-                                <a href="../productos/mini_departamento.php" class="dropdown-item">Muebles para mini departamento</a>
-                                <a href="../productos/comedores.php" class="dropdown-item">Comedores</a>
-                            </div>
-                        </li>
-                    </ul>
+    <button class="navbar-toggler" 
+    type="button" data-toggle="collapse" 
+    data-target="#navegacion" 
+    aria-expanded="false" 
+    aria-label="Alternar Menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    <form action="buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
-                        <input type="text" class="form-control mr-sm-2" placeholder="Buscar" name="busqueda">
-                        <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
-                    </form>
-                    
-                    
-                    <a href="../admin/login.php" class="btn btn-success ml-lg-5"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesion</a>
+    <div class="collapse navbar-collapse" 
+    id="navegacion">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#"  style="color: black"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                data-toggle="dropdown">
+                    Categoria
+                </a>
+                <div class="dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                    <a href="../categorias/backend/faro.php" class="dropdown-item">Faros</a>
+                    <a href="../categorias/backend/neblinero.php" class="dropdown-item">Neblineros</a>
+                    <a href="../categorias/backend/foco.php" class="dropdown-item">Focos</a>
+                    <a href="../categorias/backend/aro.php" class="dropdown-item">Aros</a>
+                    <a href="../categorias/backend/equipo.php" class="dropdown-item">Equipos</a>
+                    <a href="../categorias/backend/parlante.php" class="dropdown-item">Parlantes</a>
+                    <a href="../categorias/backend/piso.php" class="dropdown-item">Pisos</a>
+                    <a href="../categorias/backend/asiento.php" class="dropdown-item">Asientos</a>
+                    <a href="../categorias/backend/sirena.php" class="dropdown-item">Sirenas</a>
+                    <!-- <a href="categorias/backend/accesorio.php" class="dropdown-item">Accesorios</a> -->
+                    <a href="../404/404.php" class="dropdown-item">Accesorios</a>
                 </div>
-            </div>
-            
-        </nav>
+            </li>
+        </ul>
+
+        <form action="archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
+            <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
+            <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+        </form>
+        
+        
+        <a href="../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+    </div>
+</div>
+</nav>
     </header>
     
-    <div class="contenido" style="background: url('../img/fondo_horario.png'), #fff;">
+    <div class="contenido" style="background: url('/img/fondo_horario.png'), #fff;">
         <main class="container">
-            <div class="row mt-5 pt-4">
+        <div class="row mt-5 pt-4">
                 <div class="col">
                     <div class="carousel slide"
                     id="slideshow" data-ride="carousel">
@@ -130,15 +137,15 @@
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/fondo_tienda1.jpg" 
+                                <img src="../img/zuka3.jpg" 
                                 class="d-block w-100" alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/fondotienda2.jpg"
+                                <img src="../img/transmisionysuspension.jpg"
                                 class="d-block w-100"  alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/fondo_tienda3.jpg" 
+                                <img src="../img/frenoyembrage.jpg" 
                                 class="d-block w-100"  alt=""> 
                             </div>
                         </div>
@@ -225,76 +232,8 @@
         </main>
     </div>
 
-    <div class="contacto" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="py-4 border-top">
-                        <h1 class="text-center">Contacto</h1>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4 m-auto">
-                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="mb-4">
-                        <input type="text" id="nombre" class="form-control mb-3 input" name="nombre"
-                        placeholder="Nombre" 
-                        value="<?php if(!$enviado && isset($nombre)) echo $nombre ?>">
-                    
-                        <input type="text" id="correo"class="form-control mb-3 input" name="correo"
-                        placeholder="Correo"
-                        value="<?php if(!$enviado && isset($correo)) echo $correo ?>">
-                    
-                        <textarea class="form-control mb-3 input" id="mensaje" name="mensaje" placeholder="Mensaje"><?php if(!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
-                    
-                        <?php if(!empty($errores)): ?>
-                                    <div class="alert error">
-                                        <?php echo $errores;?>
-                                    </div>
-                        <?php elseif($enviado): ?>
-                                    <div class="alert success">
-                                        <p>Enviado correctamente</p>
-                                    </div>
-                        <?php endif ?>
-                                
-                                
-                    
-                        <input type="submit" value="Enviar Mensaje" name="submit"
-                                class="enviar btn btn-primary mb-4">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="horarios" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-lg-12 mb-4">
-                <div class="py-4 border-top">
-                    <h1 class="text-center">Horarios</h1>
-                    <h5>Lunes a Sabado: 10am-4pm</h5>
-                 </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <div class="ubicanos" style="background: url('../img/fondo_horario.png'), #fff;">
-        <div class=" py-4 border-top">                       
-            <h1 class="text-center">Ubícanos</h1>                       
-        </div>
-        <section class="embed-responsive embed-responsive-4by3 mapa mt-4 W-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0810796540877!2d-77.06424538579273!3d-11.968888191519184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce33fd23000b%3A0x97970f7d33c3a974!2sAv%20Gerardo%20Unger%205427%2C%20Los%20Olivos%2015311%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1588473026779!5m2!1ses!2sus" class="embed-responsive-item" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-    </div> 
-    <!-- Logo de whatsapp flotante-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=51985368257&amp;text=Hola,%20me%20podria%20ayudar?%20,tengo%20una%20consulta." class="float" target="_blank">
-    <i class="fa fa-whatsapp fa-2x my-float"></i>
-    </a>
-    
+ 
+    <br>
     
     
     

@@ -11,14 +11,14 @@
             font-family: 'Bree Serif', serif;   
         }
     </style>
-    <title>Muebleria G & M-Subir Archivos</title>
+    <title>ZUKA S.A.C.-Subir Archivos</title>
 </head>
 <body>
     <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
 <div class="container">
-    <a href="index.php" class="navbar-brand "> ZUKA S.A.C.</a>
+    <a href="../index.php" class="navbar-brand" style="color: black"> ZUKA S.A.C.</a>
 
     <button class="navbar-toggler" 
     type="button" data-toggle="collapse" 
@@ -32,10 +32,10 @@
     id="navegacion">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="index.php" class="nav-link">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
+                <a href="../index.php" class="nav-link" style="color: black">Inicio <i class="fa fa-refresh fa-spin fa-fw"></i></a>
             </li>
             <li class="nav-item dropdown">
-                <a href="#" 
+                <a href="#"  style="color: black"
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown">
@@ -71,7 +71,7 @@
 
     </header>
 
-    <div class="subir" style="background: url('../img/fondo_horario.png'), #fff;">
+    <div class="subir" style="background: url('img/fondo_horario.png'), #fff;">
         <div class="container">
             <div class="row mt-5 pt-4">
                     <div class="col">

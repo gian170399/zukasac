@@ -20,8 +20,9 @@
     <!-- <script src="https://use.fontawesome.com/8ed3a36f97.js"></script> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <style>
+        
         .titulo{
-            font-family: 'Bree Serif', serif;   
+            /* font-family: 'Bree Serif', serif;    */
         }
         .contacto .row .enviar{
             border-radius: 50px;
@@ -67,26 +68,7 @@
             font-size:17px;
         }
 
-        .imagenFav img{
-            width:10%;
-            height:100
-        }
-        .imagenFav p{
-            color: black;
-            position: absolute;
-            top:10%,
-            /* top: 50%; */
-            font-size: 20px;
-        }
-        .cta {
-            padding: 20px 20px 5px;
-
-            &::after {
-            content: '';
-            display: table;
-            clear: both;
-            }
-        }
+        
        
         </style>
     <title>ZUKA S.A.C.</title>
@@ -97,14 +79,14 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar bg scrolling-navbar"  style="background-color: #FFFFFF;">
 
             <div class="container">
-                <a href="index.php" class="navbar-brand" style="color: black"> ZUKA S.A.C.</a>
+                <a href="index.php" class="navbar-brand" style="color: black;"> ZUKA S.A.C.</a>
 
-                <button class="navbar-toggler" 
+                <button class="navbar-toggler black" style="color: black;" 
                 type="button" data-toggle="collapse" 
                 data-target="#navegacion" 
                 aria-expanded="false" 
                 aria-label="Alternar Menu">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon black" style="color: black;"> <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" 
@@ -171,11 +153,11 @@
                                 class="d-block w-100" alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="img/zuka2.jpg"
+                                <img src="img/transmisionysuspension.jpg"
                                 class="d-block w-100"  alt=""> 
                             </div>
                             <div class="carousel-item">
-                                <img src="img/zuka1.jpg" 
+                                <img src="img/frenoyembrage.jpg" 
                                 class="d-block w-100"  alt=""> 
                             </div>
                         </div>
@@ -217,7 +199,7 @@
                             </section>
                             </a>
                             <figcaption>
-                                <h3><?php echo $foto['titulo']?></h3>
+                                <h5><?php echo $foto['titulo']?></h5>
                                 <p><?php echo $foto['breveDesc']?></p>
                                 <div class="price">
                                 S/ <?php echo $foto['precio'];?>
