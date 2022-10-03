@@ -185,7 +185,7 @@
                             </section>
                             </a>
                             <figcaption>
-                                <h3><?php echo $foto['titulo']?></h3>
+                                <h5><?php echo $foto['titulo']?></h5>
                                 <p><?php echo $foto['breveDesc']?></p>
                                 <div class="price">
                                 S/ <?php echo $foto['precio'];?>

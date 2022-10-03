@@ -4,7 +4,7 @@
                         <figure class="snip1249">
                             <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
                             <section class="image" id="imagenFav">
-                                <img src="../../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fa fa-heart-o" aria-hidden="true"></i></i>
+                                <img src="../../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/><i class="fas fa-eye" style="color: #FFFFFF"></i>
                             </section>
                             </a>
                             <figcaption>
