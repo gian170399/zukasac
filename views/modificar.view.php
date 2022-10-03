@@ -105,7 +105,7 @@
                 <?php foreach($fotos as $foto): ?>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4" >
                         <div class="card" style="background: url('../img/fondo.png'), #fff;">
-                                <a href="../archivos/single.php?id=<?php echo $foto['idProducto']; ?>">
+                                <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
                                     <img height="170px" class="card-img-top w-100 img-rounded" src="../fotos/<?php echo $foto['imagen'] ?>" alt="">
                                 </a>
                                 <div class="card-body">

@@ -155,3 +155,8 @@
                 <input type="submit" class="btn btn-success enviar mb-3" value="Ingresar">
             </form>
     </div>
+
+
+    <!-- <?php include '../frontend/cabeceraCategoria.php'?> -->
+
+    <?php include '../frontend/contenido.php'?>
