@@ -15,16 +15,29 @@ create table CarroCompras(
 	cantidad int
 );
 
-DROP TABLE IF EXISTS Orden;
-create table Orden(
-	idOrden int AUTO_INCREMENT primary key,
-	fechaOrden varchar(20) null,
-	fechaenvio varchar(20) null,
-	totalOrden decimal(18,2) null,
-	estadoOrden varchar(50) null,
-	direccion varchar (100) null,
-	nombreCliente varchar (80) null
-);
+DROP TABLE IF EXISTS `orden`;
+CREATE TABLE `orden` (
+  `idOrden` int AUTO_INCREMENT primary key,
+  `idCliente` int(11) NOT NULL,
+  `precio_total` float(10,2) NOT NULL,
+  `creado` datetime NOT NULL,
+  `modificado` datetime NOT NULL,
+  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+
+DROP TABLE IF EXISTS `orden_articulos`;
+CREATE TABLE `orden_articulos` (
+  `idOrden_art` int AUTO_INCREMENT primary key,
+  `idOrden` int(11) NOT NULL,
+  `idProducto` int(11) NOT NULL,
+  `quantity` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
 
 DROP TABLE IF EXISTS Almacen;
 create Table Almacen(
@@ -33,31 +46,47 @@ create Table Almacen(
   direccion varchar(100) null
 );
     
-DROP TABLE IF EXISTS DetalleInventario;
-create Table DetalleInventario(
-  idDetalleInv int AUTO_INCREMENT primary key,
-  idProducto int NOT NULL,
-  idAlmacen int NOT NULL,
-  cantidad int null,
-  fechaEntrega varchar(20)
-  );
-  
-DROP TABLE IF EXISTS OrdenDetalle;
-create table OrdenDetalle(
-   idOrdenDetalle int AUTO_INCREMENT primary key,
-   idOrden int NOT NULL,
-   idProducto int NOT NULL,
-   cantidad int,
-   precio decimal(18,2)
-);
 
 DROP TABLE IF EXISTS Usuario;
 create table Usuario(
 	idUsuario int AUTO_INCREMENT primary key,
-	nombreUsuario varchar(100) null,
-	pass varchar(100)
+	nombre_usuario varchar(100) null,
+	clave varchar(100)
 );
 
+
+DROP TABLE IF EXISTS `clientes`;
+CREATE TABLE `clientes` (
+  `idCliente` int AUTO_INCREMENT primary key,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `address` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+
+
+ALTER TABLE `orden`add FOREIGN KEY (idCliente) REFERENCES clientes (idCliente) ON DELETE CASCADE ON UPDATE NO ACTION;
+ALTER TABLE `orden_articulos`add FOREIGN KEY (idOrden) REFERENCES orden (idOrden) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+
+
+INSERT INTO `orden` (`idOrden`, `idCliente`, `precio_total`, `creado`, `modificado`, `status`) VALUES
+(6, 1, 25.00, '2022-06-12 12:46:58', '2022-06-12 12:46:58', '1'),
+(7, 1, 40.00, '2022-06-12 13:08:08', '2022-06-12 13:08:08', '1');
+INSERT INTO `orden_articulos` (`idOrden_art`, `idOrden`, `idProducto`, `quantity`) VALUES
+(1, 6, 2, 1),
+(2, 7, 3, 1),
+(3, 7, 4, 1);
+INSERT INTO `clientes` (`idCliente`, `name`, `email`, `phone`, `address`, `created`, `modified`, `status`) VALUES
+(1, 'ConfiguroWeb', 'hola@configuroweb.com', '3022589741', 'Cali', '2022-02-17 08:21:25', '2018-02-17 08:21:25', '1');
+
+INSERT INTO `usuario` values(1,'zuka','2022');
 
 drop table usuario;
 drop table ordendetalle;

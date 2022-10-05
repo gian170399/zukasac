@@ -160,3 +160,137 @@
     <!-- <?php include '../frontend/cabeceraCategoria.php'?> -->
 
     <?php include '../frontend/contenido.php'?>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row" >
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-3 text-center">   
+                    <img src="../fotos/<?php echo $foto['imagen'];?>" alt="Responsive image" class="mt-4 img-thumbnail w-100">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4 m-auto">
+                    <div class="card border-dark mb-3 mt-1" style="max-width: 100%;">
+                        <div class="card-header bg-transparent border-dark">
+                        <h1 class="text-center"><?php if(!empty($foto['titulo'])){
+                                echo $foto['titulo'];
+                                }else{
+                                    echo "sin titulo";
+                                } ?>
+                            </h1>
+                        </div>
+                            <div class="card-body text-dark">
+                                <h3 class="card-title">Descripción:</h3>
+                                <p class="card-text"><?php echo nl2br($foto['descripcion']);?></p>
+                            </div>
+                        <div class="card-footer bg-transparent border-dark">
+                            <div class="col-12 col-md-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="col-12">
+                                        <h4 class="card-title ">Precio: S/<?php echo $foto['precio'];?></h4>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../AccionCarta.php?action=addToCart&idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                </div>
+                <!-- <a href="index.php" class="regresar"><i class="fa fa-long-arrow-left"></i> Regresar</a> -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="index.php">Inicio</a></li>
+                    <li role="presentation" class="active"><a href="VerCarta.php">Carrito de Compras</a></li>
+                    <li role="presentation"><a href="Pagos.php">Pagar</a></li>
+                    <li role="presentation"><a href="https://www.configuroweb.com/46-aplicaciones-gratuitas-en-php-python-y-javascript/#Aplicaciones-gratuitas-en-PHP,-Python-y-Javascript">ConfiguroWeb</a></li>
+                </ul>
+            </div>
+
+            <div class="panel-body">
+
+
+                <h1>Carrito de compras</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Sub total</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        if ($cart->total_items() > 0) {
+                            //get cart items from session
+                            $cartItems = $cart->contents();
+                            foreach ($cartItems as $item) {
+                        ?>
+                                <tr>
+                                    <td><?php echo $item["titulo"]; ?></td>
+                                    <td><?php echo 'S/.' . $item["precio"]; ?></td>
+                                    <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
+                                    <td><?php echo 'S/.' . $item["subtotal"] ; ?></td>
+                                    <td>
+                                        <a href="AccionCarta.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Confirma eliminar?')"><i class="glyphicon glyphicon-trash"></i></a>
+                                    </td>
+                                </tr>
+                            <?php }
+                        } else { ?>
+                            <tr>
+                                <td colspan="5">
+                                    <p>No has solicitado ningún producto.....</p>
+                                </td>
+                            <?php } ?>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Volver a la tienda</a></td>
+                            <td colspan="2"></td>
+                            <?php if ($cart->total_items() > 0) { ?>
+                                <td class="text-center"><strong>Total <?php echo 'S/.' . $cart->total(); ?></strong></td>
+                                <td><a href="Pagos.php" class="btn btn-success btn-block">Pagos <i class="glyphicon glyphicon-menu-right"></i></a></td>
+                            <?php } ?>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+        <!--Panek cierra-->
+
+    </div>

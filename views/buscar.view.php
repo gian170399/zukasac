@@ -113,6 +113,8 @@
         </form>
         
         
+        <a href="../VerCarta.php" class="btn btn-outline-dark ml-lg-5 "><i class="fas fa-shopping-cart"></i> Carrito</a>
+
         <a href="../admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
     </div>
 </div>
@@ -190,7 +192,7 @@
                                 <div class="price">
                                 S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <a href="archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                                <a href="../AccionCarta.php?action=addToCart&idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
                             </figcaption>
                         </figure>
                         <?php endforeach; ?>

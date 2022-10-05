@@ -49,7 +49,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             
             if($insertOrderItems){
                 $cart->destroy();
-                header("Location: OrdenExito.php?id=$orderID");
+                header("Location: comprobante.php?id=$orderID");
             }else{
                 header("Location: Pagos.php");
             }

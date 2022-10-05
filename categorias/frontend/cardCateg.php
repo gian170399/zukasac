@@ -13,7 +13,7 @@
                                 <div class="price">
                                 S/ <?php echo $foto['precio'];?>
                                 </div>
-                                <a href="../../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
+                                <a href="../../AccionCarta.php?action=addToCart&idProducto=<?php echo $foto['idProducto'];?>" class="add-to-cart">Agregar al carrito</a>
                             </figcaption>
                         </figure>
                         <?php endforeach; ?>

@@ -1,22 +1,7 @@
 <?php
-// include database configuration file
-include 'pruebaconexion.php';
-
-// initializ shopping cart class
-include 'La-carta.php';
-$cart = new Cart;
-
-// redirect to home if cart is empty
-if ($cart->total_items() <= 0) {
-    header("Location: index.php");
+if (!isset($_REQUEST['id'])) {
+  header("Location: index.php");
 }
-
-// set customer ID in session
-$_SESSION['sessCustomerID'] = 1;
-
-// get customer details by session customer ID
-$query = $db->query("SELECT * FROM clientes WHERE idCliente = " . $_SESSION['sessCustomerID']);
-$custRow = $query->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -113,78 +98,85 @@ $custRow = $query->fetch_assoc();
         </div>
     </nav>
     <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-
-                <ul class="nav nav-pills">
-                    <li role="presentation"><a href="index.php">Inicio</a></li>
-                    <li role="presentation"><a href="VerCarta.php">Carrito de Compras</a></li>
-                    <li role="presentation" class="active"><a href="Pagos.php">Pagar</a></li>
-                    <li role="presentation"><a href="https://www.configuroweb.com/46-aplicaciones-gratuitas-en-php-python-y-javascript/#Aplicaciones-gratuitas-en-PHP,-Python-y-Javascript">ConfiguroWeb</a></li>
-                </ul>
-            </div>
-
-            <div class="panel-body">
-                <h1>Vista previa de la Orden</h1>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Pricio</th>
-                            <th>Cantidad</th>
-                            <th>Sub total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        if ($cart->total_items() > 0) {
-                            //get cart items from session
-                            $cartItems = $cart->contents();
-                            foreach ($cartItems as $item) {
-                        ?>
-                                <tr>
-                                    <td><?php echo $item["titulo"]; ?></td>
-                                    <td><?php echo 'S/.' . $item["precio"]; ?></td>
-                                    <td><?php echo $item["qty"]; ?></td>
-                                    <td><?php echo 'S/.' . $item["subtotal"]; ?></td>
-                                </tr>
-                            <?php }
-                        } else { ?>
-                            <tr>
-                                <td colspan="4">
-                                    <p>No hay articulos en tu carta......</p>
-                                </td>
-                            <?php } ?>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3"></td>
-                            <?php if ($cart->total_items() > 0) { ?>
-                                <td class="text-center"><strong>Total <?php echo 'S/.' . $cart->total(); ?></strong></td>
-                            <?php } ?>
-                        </tr>
-                    </tfoot>
-                </table>
-                <div class="shipAddr">
-                    <h4>Detalles de envío</h4>
-                    <p><?php echo $custRow['name']; ?></p>
-                    <p><?php echo $custRow['email']; ?></p>
-                    <p><?php echo $custRow['phone']; ?></p>
-                    <p><?php echo $custRow['address']; ?></p>
-                </div>
-                <div class="footBtn">
-                    <a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-                    
-                    <a href="creditcardpage/creditcard.php" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
-                    
-                    <!-- <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a> -->
-                </div>
-            </div>
-        </div>
-        <!--Panek cierra-->
+  
+  <div class="row header">
+    <div class="arrow-right"></div>
+    <h1 class="title">FACTURĂ</h1>
+    <div class="col-12 text-right pr-5 pt-4">
+      <img class="logo" height="125px" width="125px" src="https://roundpeg.biz/wp-content/uploads/2013/12/Chase.png" />
     </div>
-
+    <div class="rectangle"></div>
+    <div class="shape"></div>
+  </div>
+  <div class="row invoice-content">
+    <div class="col-4 pl-5">
+      <h5><i class="fa fa-building-o pr-1" aria-hidden="true"></i> ZUKA SAC</h5>
+      <h5><i class="fa fa-phone pr-1" aria-hidden="true"></i> (+012) 345 6789</h5>
+      <h5><i class="fa fa-envelope-o pr-1" aria-hidden="true"></i> zuka@info.com</h5>
+    </div>
     
+    <div class="col-4 offset-4 text-right pr-5 pt-3">
+      <h4>Factura<strong>#1</strong></h4>
+      <h4>Emitida<strong> 01 Oct. 2022</strong></h4>
+    </div>
+  </div>
+  
+  <div class="row invoiced-details">
+    <div class="col-8 invoiced-to p-5">
+      <h3><u>Emitido a</u></h3>
+      <h6><strong>Giancarlo Ruiz</strong></h6>
+      <h6>+51 922629024</h6>
+      <h6>nombre de la calle 1465<br />Lima, Peru</h6>
+    </div>
+    
+    <div class="col-4 p-5 text-right">
+      <h3>La Orden se ha enviado exitósamente. El ID de tu pedido es</h3>
+      <h4><strong><?php echo $_GET['id']; ?></strong></h4>
+    </div>
+  </div>
+  
+  <div class="row background">
+    <table class="table">
+      <thead class="thead-blue">
+        <tr>
+          <th scope="col">Nr.</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Descuento</th>
+          <th scope="col">Suma</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>(Nombre del producto)</td>
+          <td>1</td>
+          <td>200 <span class="curency"></span></td>
+          <td>Sin Descuento</td>
+          <td>190 <span class="curency">&dollar;</span></td>
+        </tr>
+        
+        <tr>
+          <td colspan="3" class="empty"></td>
+          <td colspan="2"><h5><strong>SUBTOTAL</strong></h5></td>
+          <td><h5><strong>960 <span class="curency"></span></strong></h5></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="empty"></td>
+          <td colspan="2"><h5><strong>IGV 18%</strong></h5></td>
+          <td><h5><strong>144 <span class="curency"></span></strong></h5></td>
+        </tr>
+        <tr class="total">
+          <td colspan="3" class="empty"></td>
+          <td colspan="2" class="total"><h4><strong>TOTAL</strong></h4></td>
+          <td class="total-value"><h4><strong>816 <span class="curency"></span></strong></h4></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
 </body>
 
 </html>
