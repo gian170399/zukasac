@@ -8,7 +8,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Encuentranos</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>Av. Aviación 939, La Victoria 15018</span>
                             </div>
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Llamanos</h4>
-                                <span>+51 985368257</span>
+                                <span>+51 922629924</span>
                             </div>
                         </div>
                     </div>
@@ -37,11 +37,11 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                <!-- <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a> -->
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p> -->
                             </div>
                             <div class="footer-social-icon">
                                 <span>Siguenos</span>

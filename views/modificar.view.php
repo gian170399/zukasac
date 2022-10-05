@@ -70,7 +70,7 @@
             </li>
         </ul>
 
-        <form action="archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
+        <form action="../archivos/buscar.php" class="form-inline my-2 my-lg-0" name="busqueda" method="get">
             <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
             <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
         </form>
@@ -101,28 +101,32 @@
                 </div>
             </div>
 
-            <div class="row py-4 ">
-                <?php foreach($fotos as $foto): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-4" >
-                        <div class="card" style="background: url('../img/fondo.png'), #fff;">
-                                <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
-                                    <img height="170px" class="card-img-top w-100 img-rounded" src="../fotos/<?php echo $foto['imagen'] ?>" alt="">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title"><?php echo $foto['titulo']?></h3>
-                                    <p class="card-text"><?php echo $foto['breveDesc']?></p>
-                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info mb-1"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
-                                    <a href="editar.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-dark mb-1"><i class="fa fa-pencil fa-fw"></i> Editar</a>
-                                    <a onclick="return confirmar('¿Realmente deseas borrar?');" href="borrar.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i> Borrar</a>
+            
+
+            <!-- NUEVO CARD -->
+            <div class="row py-4 " width="50px">
+                    <?php foreach($fotos as $foto): ?>
+                        <figure class="snip1249">
+                            <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto']; ?>">
+                            <section class="image" id="imagenFav">
+                                <img src="../fotos/<?php echo $foto['imagen'];?>" alt="sample90"/>
+                            </section>
+                            </a>
+                            <div class="card-body">
+                                    <h5 class="card-title" style="color:black;"><?php echo $foto['titulo']?></h5>
+                                    <p class="card-text" style="color:black;"><?php echo $foto['breveDesc']?></p>
+                                    <a href="../archivos/single.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-info mb-1">Ver</a>
+                                    <a href="editar.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-dark mb-1">Editar</a>
+                                    <a onclick="return confirmar('¿Realmente deseas borrar?');" href="borrar.php?idProducto=<?php echo $foto['idProducto'];?>" class="btn btn-sm btn-danger mb-1"> Borrar</a>
                                     <!--<a class="btn btn-danger" href="#">-->
                                     <!--<i class="fa fa-trash-o fa-lg"></i> Delete</a>-->
-                                </div>
-
-                              
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                            </div>
+                            
+                        </figure>
+                        <?php endforeach; ?>
+                
+                </div>
+            <!-- NUEVO CARD -->
 
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto">

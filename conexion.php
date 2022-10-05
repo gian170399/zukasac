@@ -3,5 +3,4 @@
  if(!$conexion){
      die();
  }
-
 ?>

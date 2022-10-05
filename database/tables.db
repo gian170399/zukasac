@@ -57,3 +57,13 @@ create table Usuario(
 	nombreUsuario varchar(100) null,
 	pass varchar(100)
 );
+
+
+drop table usuario;
+drop table ordendetalle;
+drop table detalleinventario; 
+drop table carrocompras; 
+drop table almacen; 
+drop table orden; 
+drop table producto; 
+drop table categoria; 
