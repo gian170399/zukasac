@@ -98,8 +98,8 @@
                         <label for="titulo">Titulo del producto:</label>
                         <input type="text" name="titulo" id="titulo" class="form-control" required>
 
-                        <label for="extracto">Extracto del producto:</label>
-                        <textarea name="extracto" name="breveDesc" id="extracto" placeholder="Ingresa una breve descripcion" class="form-control" required></textarea>
+                        <!-- <label for="extracto">Extracto del producto:</label>
+                        <textarea name="extracto" name="breveDesc" id="extracto" placeholder="Ingresa una breve descripcion" class="form-control" required></textarea> -->
                         
                         <label for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control mb-2" required>

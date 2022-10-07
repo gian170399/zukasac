@@ -107,8 +107,8 @@
                         <label for="titulo">Titulo del artículo:</label>
                         <input type="text" name="titulo" id="titulo" class="form-control" value="<?php echo $post['titulo'] ?>">
 
-                        <label for="breveDesc">breveDesc del artículo:</label>
-                        <textarea name="breveDesc" name="breveDesc" id="breveDesc" placeholder="Ingresa una breveDesc" class="form-control" ><?php echo $post['breveDesc']; ?></textarea>
+                        <!-- <label for="breveDesc">breveDesc del artículo:</label>
+                        <textarea name="breveDesc" name="breveDesc" id="breveDesc" placeholder="Ingresa una breveDesc" class="form-control" ><?php echo $post['breveDesc']; ?></textarea> -->
                         
                         <label for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control mb-2">

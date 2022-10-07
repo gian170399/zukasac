@@ -18,6 +18,20 @@ a {
 	text-decoration: none;
 	margin: 15px 0;
 }
+.icono-user {
+  width: 32px;
+  height: 14px;
+  border-radius: 64px 64px 0 0/64px;
+  margin: 18px 1px 2px
+}
+
+.icono-user:before {
+  width: 12px;
+  height: 12px;
+  top: -20px;
+  border-radius: 50%
+}
+
 figure.snip1249 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;

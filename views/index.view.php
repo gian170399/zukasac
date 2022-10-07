@@ -125,8 +125,13 @@
                         <input type="text" class="form-control mr-sm-2"type="search" placeholder="Buscar" name="busqueda">
                         <button class="btn btn-primary my-sm-0 my-2" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
                     </form>
-                    
-                    <a href="VerCarta.php" class="btn btn-outline-dark ml-lg-5 "><i class="fas fa-shopping-cart"></i> Carrito</a>
+
+                    <!-- <label class="demo" onmouseup="focusIn(event)">
+                        <i class="icono-user"></i>
+                        <div class="about"><span onclick="selectAll(this)">icono-user</span></div>
+                    </label> -->
+
+                    <a href="VerCarta.php" class="btn  "><i class="fas fa-shopping-cart"></i> Carrito</a>
                     <a href="admin/login.php" class="btn btn-outline-success ml-lg-5 "><i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
                 </div>
         </div>
